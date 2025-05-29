@@ -25,15 +25,56 @@ This project is a modern **Angular 19 application** that demonstrates **real-tim
 
 ```
 src/
-  ├── app/
-  │   ├── core/             → Enums and core utilities
-  │   ├── features/
-  │   │   ├── users/        → User module
-  │   │   ├── attractions/  → Attraction module
-  │   │   └── pet-sales/    → Pet sales chart and table
-  │   ├── shared/           → Shared services, components, loaders
-  │   ├── app.config.ts     → Angular 16+ configuration (interceptors)
-  │   └── app.routes.ts     → Routing definitions
+├── app/
+│   ├── auth/
+│   │   │   ├── components/
+│   │   │   ├── models/
+│   │   │   ├── services/
+│   │   ├── auth-routing.module.ts
+│   │   └── auth.module.ts
+│   ├── core/
+│   │   ├── enums/
+│   │   ├── guards/
+│   │   └── interceptors/
+│   ├── features/
+│   │   ├── attractions/
+│   │   │   ├── components/
+│   │   │   ├── models/
+│   │   │   ├── services/
+│   │   │   ├── attractions-routing.module.ts
+│   │   │   └── attractions.module.ts
+│   │   ├── pet-sales/
+│   │   │   ├── components/
+│   │   │   ├── models/
+│   │   │   ├── services/
+│   │   │   ├── pet-sales-routing.module.ts
+│   │   │   └── pet-sales.module.ts
+│   │   └── users/
+│   │       ├── components/
+│   │       ├── models/
+│   │       ├── services/
+│   │       ├── users-routing.module.ts
+│   │       └── users.module.ts
+│   ├── shared/
+│   │   ├── components/
+│   │   │   ├── confirm-dialog/
+│   │   │   └── loader/
+│   │   ├── services/
+│   │   └── environments/
+│   ├── layout/
+│   │   └── header/
+│   ├── app.component.html
+│   ├── app.component.scss
+│   ├── app.component.spec.ts
+│   ├── app.component.ts
+│   ├── app.config.ts
+│   ├── app.module.ts
+│   └── app.routes.ts
+├── assets/
+├── environments/
+├── index.html
+├── main.ts
+└── styles.scss
 ```
 
 ---
