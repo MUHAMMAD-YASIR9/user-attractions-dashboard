@@ -1,0 +1,36 @@
+.pet-sales-container {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  .filter-section {
+    margin-bottom: 1rem;
+    mat-form-field {
+      width: 250px;
+    }
+  }
+
+  .chart-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .table-wrapper {
+    .search-field {
+      width: 250px;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    mat-paginator {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

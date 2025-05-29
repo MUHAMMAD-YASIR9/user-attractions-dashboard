@@ -1,0 +1,21 @@
+<mat-toolbar class="toolbar">
+  <!-- Logo -->
+  <span class="logo">Dashboard</span>
+
+  <!-- Navigation -->
+  <nav class="nav-links">
+    <a mat-button routerLink="/users" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+      Users
+    </a>
+    <a mat-button routerLink="/attractions" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+      Attractions
+    </a>
+    <a mat-button routerLink="/pet-sales" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+      Pet Sales
+    </a>
+  </nav>
+
+  <!-- Spacer and Logout -->
+  <span class="spacer"></span>
+  <button mat-button (click)="logout()">Logout</button>
+</mat-toolbar>
